@@ -7,13 +7,13 @@ $(document).ready (function() {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Web Developer", "Software Engineer", "Student"],
+        strings: ["Web Developer", "Software Developer", "Full Stack Developer"],
         typeSpeed: 70,
         loop: true,
         startDelay: 1000,
         showCursor: false
-    });
-
+	});
+	
     $('.owl-carousel').owlCarousel({
 	    loop:true,
 	    items: 4,
