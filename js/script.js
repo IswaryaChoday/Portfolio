@@ -78,11 +78,17 @@ $(document).ready(function() {
 
 
 		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+			const options = {
+				  startVal: 1,
+				  decimalPlaces: 2,
+				};
 			$(".counter").each(function() {
 				var element = $(this);
-				var endVal = parseInt(element.text());
-
-				element.countup(endVal);
+				var endVal = parseFloat(element.text());
+				console.log(endVal);
+				element.countUp(".counter",endVal,options);
+				
+				
 			})
 
 			countUpFinished = true;
